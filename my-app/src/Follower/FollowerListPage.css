@@ -1,0 +1,59 @@
+.follower-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.follower-item {
+  margin: 10px;
+  text-align: center;
+  flex-basis: calc(50% - 20px);
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.follower-avatar {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.follower-details {
+  font-size: 0.8rem;
+  flex-grow: 1;
+}
+
+.follower-box {
+  display: flex;
+}
+
+.back-to-repo-list {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-repo-list:hover {
+  background-color: #45a049;
+}
+
+@media (min-width: 768px) {
+  .follower-item {
+    flex-basis: calc(50% - 20px);
+  }
+}
